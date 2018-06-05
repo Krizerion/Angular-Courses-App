@@ -1,13 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { LogoComponent } from './components/logo/logo.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
-    LogoComponent
+    HeaderComponent,
+    FooterComponent
   ],
-  exports: [LogoComponent],
-  imports: [BrowserModule],
+  exports: [SharedModule],
+  imports: [
+    BrowserModule
+  ],
   providers: [],
   bootstrap: []
 })
